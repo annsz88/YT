@@ -1,0 +1,88 @@
+{
+  "id": "03a983b0-bb36-4e6a-91d7-853c115f1f77",
+  "version": "2.0",
+  "name": "You Tube",
+  "url": "https://music.youtube.com",
+  "tests": [{
+    "id": "0ecfb598-cea8-43b1-b267-309633105614",
+    "name": "sound of silence",
+    "commands": [{
+      "id": "ae3bc38f-cbef-43c0-ab7f-a4ac3a1431ee",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a9adcab-2d17-4190-9660-3c5c4a0725f5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1342x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34827c2d-11dd-4e59-80be-27ab439fc2b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-box > #input",
+      "targets": [
+        ["css=.search-box > #input", "css:finder"],
+        ["xpath=//input[@id='input']", "xpath:attributes"],
+        ["xpath=//ytmusic-app-layout[@id='layout']/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3778e51b-dce9-4dd2-997f-948db1e59d90",
+      "comment": "",
+      "command": "type",
+      "target": "css=.search-box > #input",
+      "targets": [
+        ["css=.search-box > #input", "css:finder"],
+        ["xpath=//input[@id='input']", "xpath:attributes"],
+        ["xpath=//ytmusic-app-layout[@id='layout']/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sound "
+    }, {
+      "id": "d345f4b0-4bde-4565-aaef-a8ddd4d741be",
+      "comment": "",
+      "command": "click",
+      "target": "id=suggestion-cell-0x0",
+      "targets": [
+        ["id=suggestion-cell-0x0", "id"],
+        ["css=#suggestion-cell-0x0", "css:finder"],
+        ["xpath=//yt-formatted-string[@id='suggestion-cell-0x0']", "xpath:attributes"],
+        ["xpath=//ytmusic-search-suggestion[@id='suggestion-0']/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//yt-formatted-string", "xpath:position"],
+        ["xpath=//yt-formatted-string[contains(.,'sound of silence')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8115166-9cb2-4545-935f-bcfa44af8100",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sound of Silence Cyrix Remix - One Hour",
+      "targets": [
+        ["linkText=Sound of Silence Cyrix Remix - One Hour", "linkText"],
+        ["css=.ytmusic-card-shelf-renderer:nth-child(1) > .yt-formatted-string", "css:finder"],
+        ["xpath=//a[contains(text(),'Sound of Silence Cyrix Remix - One Hour')]", "xpath:link"],
+        ["xpath=//div[@id='contents']/ytmusic-card-shelf-renderer/div/div[2]/div/div/div[2]/div/yt-formatted-string/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'watch?v=WTJLzBcH7Cw')])[2]", "xpath:href"],
+        ["xpath=//div/div[2]/div/yt-formatted-string/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sound of Silence Cyrix Remix - One Hour')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5e0f4bf5-6321-4947-a223-199a3861bb94",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0ecfb598-cea8-43b1-b267-309633105614"]
+  }],
+  "urls": ["https://music.youtube.com/"],
+  "plugins": []
+}

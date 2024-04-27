@@ -1,0 +1,54 @@
+{
+  "id": "86aae753-360f-4f19-9207-1f8444ecd9cc",
+  "version": "2.0",
+  "name": "Demo_2",
+  "url": "https://demoqa.com",
+  "tests": [{
+    "id": "cf5ef673-15ac-4e13-946d-77b2c4298944",
+    "name": "Test_czy_wyświetla_impresive",
+    "commands": [{
+      "id": "de36275b-4ea8-4ddc-ba11-7fa3a146be08",
+      "comment": "",
+      "command": "open",
+      "target": "/radio-button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "361eac1c-860e-458a-8279-ad4fd26de657",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1342x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e81755a6-d476-4513-b180-ff6c5e2e04b5",
+      "comment": "",
+      "command": "",
+      "target": "css=.custom-control:nth-child(3) > .custom-control-label",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c3aae8a-1959-4a26-bc54-e6995c722e39",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-success",
+      "targets": [
+        ["css=.text-success", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div[2]/div[2]/p/span", "xpath:idRelative"],
+        ["xpath=//p/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Impressive')]", "xpath:innerText"]
+      ],
+      "value": "Koń Rafał"
+    }]
+  }],
+  "suites": [{
+    "id": "77d0486a-6462-4012-b6da-dd369d3d5375",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cf5ef673-15ac-4e13-946d-77b2c4298944"]
+  }],
+  "urls": ["https://demoqa.com/"],
+  "plugins": []
+}
